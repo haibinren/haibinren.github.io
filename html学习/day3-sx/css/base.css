@@ -1,0 +1,258 @@
+/*body{
+	background: red;
+}*/
+
+/*样式初始化*/
+html,body,ul,li,p,h1,h2,h3,h4,h5,h6,div,hr,img{
+	margin: 0;
+	padding: 0;
+	
+}
+ul,li{
+	list-style: none;
+}
+/*body{
+	font: 12px/1.5 "微软雅黑 " ;
+}*/
+.tc{
+	font-family: "微软雅黑";
+	color: #666666;
+}
+
+.fr{
+	float: right;
+}
+.fl{
+	float:left;
+	
+}
+.pr{
+	position: relative;
+}
+.pa{
+	position: absolute;
+}
+.bg{
+	background: cadetblue;
+}
+.f15{
+	font-size: 15px;
+}
+.mt40{
+	margin-top: 40px;
+}
+.ml10{
+	margin-left: 10px;
+}
+.mr{
+	margin-left: 5px;
+}
+.vm{
+	/*垂直对齐方式                  值
+	/*只能用于行内*/
+	vertical-align: middle;
+}
+.t-al{
+	text-align: center;
+}
+
+/*页面*/
+.layout{
+	width: 1000px;
+	margin-left:auto ;
+	margin-right: auto;
+}
+
+.top{
+	height: 38px;
+	background-color: #ededed;           
+}
+
+.top-box{
+	height: 38px;
+	/*文字垂直居中*/
+	line-height:38px;
+}
+.m-lr{
+	margin-left: auto;
+	margin-right: auto;
+}
+/*span*/
+
+.info-icon{
+	/**/
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	background: url(../img/webchat.png) center center;
+	vertical-align: middle;
+}
+/*nav*/
+
+.img-box{
+	height: 73px;
+	
+}
+.logo{
+	width: 208px;
+	height: 54px;
+	padding-top: 12px ;
+	padding-bottom: 7px;
+}
+.logo-nav{
+	float: right;
+	width: 792px;
+	height: 73px;
+	text-align: center;
+	line-height: 73px;
+}
+.nav-a{
+	font-size:15px ;
+	margin-right: 25px;
+	color: #6d6d6d;
+	text-decoration: none;
+}
+.logo-nav .active{
+	border-bottom: 1px solid #40bfe2;
+	color: #40bfe2;
+	padding-bottom: 5px;
+}
+
+/*...................*/
+.banner{
+	height: 575px;
+	background: url(../img/banner.jpg) no-repeat center center ;
+}
+.small-titile{
+	padding-top: 21px;
+	
+	
+	
+}
+hr{
+	border: 0;
+	border-top: 1px solid  #40bfe2  ;
+	
+	
+	
+}
+.h3-title{
+	/*position: absolute;*/
+	width: 198px;
+	height:42px ;
+	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -21px;
+	
+	text-align: center;
+	line-height: 42px;
+	color: #3CBCE1 ;
+	border: 1px solid #40bfe2;
+	background-color:  white;
+	
+	
+}
+
+.tit-hr{
+	
+	border: 0;
+	border-top: 1px solid #40bfe2;
+}
+
+
+.list-box{
+	width: 1000px;
+	height: 501px;
+	border-top: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+	margin-top: 37px;
+	
+}
+.list{
+	float: left;
+	width:249px;
+	height: 225px;
+	border-right:1px solid #ededed ;
+	border-bottom: 1px solid #ededed;
+	text-align: center;
+	
+}
+.list1{
+	float: left;
+	width:249px;
+	height: 225px;
+	
+	border-bottom: 1px solid #ededed;
+	text-align: center;
+	
+}
+.list-img{
+	padding-top:60px ;
+	padding-bottom: 46px;
+}
+/*250 226*/
+
+.list-text{
+	display: block;
+
+}
+.ul-box{
+	width: 1000px;
+	height: 354px;
+	margin-top: 44px;
+	text-align: center;
+}
+
+
+.float{
+	float: left;
+	height: 354px;
+	width: 325px;
+	margin-left: 6px;
+
+}
+.p1{
+	width: 323px;
+	height: 168px;
+	margin-top: 11px;
+	margin-bottom: 11px;
+}
+
+.d2{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.t-1{
+	height: 140px;
+	width: 283px;
+	margin-left: 20px;
+	margin-right: 20px;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: left;
+	
+	
+}
+.bg1-box{
+
+	background: url(../img/bg1.jpg) repeat center center ;
+	height: 18px;
+	margin-top: 42px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+
+	
+	
+}
+.table-box{
+	height: 586px;
+	background-color:#34b8de ;
+	margin-left: auto;
+	margin-right: auto;
+	
+	text-align: center;
+}
+

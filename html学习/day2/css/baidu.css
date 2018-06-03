@@ -1,0 +1,129 @@
+body{
+	/*background: red;*/
+}
+
+
+/*css样式初始化*/
+/*清楚浏览器默认样式*/
+body,div,input,button,{
+	margin: 0;
+	padding: 0;
+}
+button{
+	border-radius: 0;
+}
+input,button{
+	border: 0;
+	/*外边线*/
+	outline: 0;
+	width: ;
+}
+
+.auto{
+	margin-left: auto;
+	margin-right: auto;
+}
+.tc{
+	text-align:center;
+}
+.plr10{
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #666;
+	
+}
+
+img{
+	/*让他变成 块状元素*/
+	display: block;
+	
+}
+.a{
+	color: #333;
+	text-decoration: none;
+}
+/*//块状元素 div p h1 -h6 ul li ol dl  占一行 可加宽高
+//行内块    span i em storng          不占一行 不可加宽高
+//行内块元素 img input 				不占一行 可加宽高*/
+
+/*------------------------------------------------*/
+/*主页样式*/
+.logo{
+	width: 270px;
+	height: 129px;
+	margin: 30px auto 25px auto; //上右下左 顺序  符合属性
+	/*分开写*/
+	/*margin-top: 30px;
+	margin-right: auto;
+	margin-bottom:25px ;
+	margin-left:auto ;*/
+	/*值相同 可不写*/
+	
+	/*margin: 30px 25px 30px 35;
+	 不能合并*/
+/*盒子居中*/
+}
+.test{
+	width: 300px;
+	height: 300px;
+	background: yellow;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.search-box{
+	width: 640px;
+	height: 36px;
+	background: blue;
+	
+}
+
+
+.search{
+	/*浮动就是把任何元素变成行内块元素*/
+	float: left;
+	width: 527px;
+	height: 22px;
+	border: 1px solid #888;
+	border-right:0 ;
+	padding: 6px;
+	line-height: 22px;
+	
+	/*background:yellow;*/
+
+}
+
+/*.search:hover 鼠标经过改变颜色*/
+.search:focus{
+	border-color: #4B94FB;
+}
+
+.qrcode{
+	width: 60px;
+	height: 60px;
+	margin-top:170px ;
+	
+}
+.qr-title{
+	font-size: 12px;
+	color: #666;
+	line-height: 30px;
+}
+.search-btn{
+	width: 100px;
+	height: 36px;
+	/*水平居中*/
+	text-align: center;
+	/*垂直居中*/
+	line-height: 36px;
+	/*背景颜色*/
+	color: white;
+	/*字体大小*/
+	font-size: 16px;
+	background: blue;
+	/*光标 样式 手指*/
+	cursor: pointer;
+}
+a{
+	float: left;
+}

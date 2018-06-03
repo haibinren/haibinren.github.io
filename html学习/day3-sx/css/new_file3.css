@@ -1,0 +1,190 @@
+/*body{
+	background: red;
+}*/
+html,body,{
+	margin: 0;
+	padding: 0;
+	
+}
+.text-cen{
+	text-align: center;
+}
+.dispaly{
+	display: inline-block;
+}
+.tc{
+	font-family: "微软雅黑";
+	color: #666666;
+}
+.f14{
+	font-size: 14px;
+}
+.f15{
+	font-size: 15px;
+	
+}
+.ff{
+	font-family: monospace;
+	font-size: 15px;
+	
+	}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.vm{
+	vertical-align: middle;
+}
+.top{
+	height:38px ;
+	background-color: #EDEDED;
+}
+.m-lr{
+		margin-left: auto;
+		margin-right: auto;
+}
+.top-box{
+	font-size: 12px;
+
+	width: 1000px;
+	line-height: 38px;
+}
+.img1{
+	display: inline-block;
+
+}
+.layout{
+	display: inline-block;
+	background: url(../img/webchat.png) center center;
+	width: 19px;
+	height: 19px;
+	margin-left: 15px;
+	line-height: 38px;
+}
+/*-----------导航部分-----------------*/
+.nav{
+	
+	line-height: 66px;
+	background: blue;
+	border-top-color: #34b8de;
+}
+.nav-box{
+	background: burlywood;
+	line-height: 66px;
+	width: 1000px;
+	text-align:left;
+	
+}
+.nav-box-log{
+	display: inline-block;
+	line-height: 66px;
+	width: 220px;
+	background: aqua;
+
+}
+.img-long{
+	display: inline-block;
+}
+
+.img-arrow-box{
+	line-height: 7px;
+	text-align: center;
+}
+.img-arrow{
+	height: 7px;
+}
+.nav-box-botton{
+	float: right;
+	background: tomato;
+	width: 520px;
+	height: 66px;
+	
+}
+.nav-font-mr{
+	margin-left: 15px;
+}
+.img-big-box{
+	height: 575px;
+	background: blueviolet;
+	text-align: center;
+	margin-bottom: 0;
+}
+.img-big{
+	height: 575px;
+	
+}
+.hr{
+	display: inline-block;
+	
+	
+	height: 1px;
+	background: #34b8de;
+	width: 1000px;
+}
+.hr-wai{
+	height: 127px;
+	line-height: 127px;
+	background: chocolate;
+	text-align: center;
+}
+.hr-box{
+	display: inline-block;
+	position: relative;
+	height: 42px;
+	background-color: aqua;
+	line-height: 43px;
+	text-align: center;
+	
+}
+.hr-nei{
+	
+	position: absolute;
+	
+	height: 40px;
+	width: 200px;
+	background-color:white ;
+	left: 400px;
+	top: 0px;
+	text-align: center;
+	border: 1px solid #3cbce1;
+	color:#3cbce1 ;
+}
+/*图文部分*/
+
+.img-du{
+	width: 333px;
+	height: 34px;
+	text-align: center;
+}
+.text1{
+	width: 335px;
+	height: 124px;
+}
+.p1{
+
+}
+.photo-box{
+	height: 354px;
+	width: 1000px;
+}
+.photo1{
+	display: inline-block;
+	width: 330px;	
+}
+.img-po-1{
+	width: 330px;
+	height: 195px;
+}
+.photo2{
+	display: inline-block;
+	width: 330px;
+	
+}
+.photo3{
+	display: inline-block;
+	width: 330px;
+	
+}

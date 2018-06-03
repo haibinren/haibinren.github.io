@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--版本html4.01 xhtml 1.0(严格模式) html5(提供播放功能不写/)  w3c -->
+<!--文档声明-->
+<!--    第一颗内容-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!--author 是作者-->
+		<meta name="author" content="神作者" />
+		<!--meta 意思是给页面提供信息-->
+		<meta name="description" content="曼斯教育是什么?网页的段描述." />
+		<!--description:用于定义网页简短描述        content 是页面的内容-->
+		<meta name="keywords" content="曼斯教育,百度,PHP"/>
+		<!--keywords:关键词  - 搜索的词语 内容  已逗号分开-->
+		<title>百度一下,你就知道</title>
+		<!--标签-->
+		<!--标签图标-->
+		<link rel="shortcut icon " href="/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon " href="https://www.baidu.com/favicon.ico" type="image/x-icon"  />
+		
+		<!--rel:链接功能                        href:引用地址                                                           type:选择类型-->
+		<!--这是小图片,大小合适-->
+		<!--如果根目录 代码可以省略-->
+		<link rel="bookmark" href="https://www.baidu.com/favicon.ico" type="image/x-icon"  />
+		<!--书签图标-->
+	</head>
+	<!--在网页可以看到-->
+	<body>
+		<!--ul>li>a>img   这是一种快速编写-->
+		<ul>
+			<li><a href=""><img src="" alt="" /></a></li>
+		</ul>
+		<!--ul>li*5   这是一种快速编写-->
+		<ul>
+			<li><a href=""><img src="" alt="" /></a></li>
+			<li><a href=""><img src="" alt="" /></a></li>
+			<li><a href=""><img src="" alt="" /></a></li>
+			<li><a href=""><img src="" alt="" /></a></li>
+			<li><a href=""><img src="" alt="" /></a></li>
+		</ul>
+		<h1>标题一</h1>
+		<h2>标题二</h2>
+		<h3>标题三</h3>
+		<h3>标题四</h3>
+		<h4>标题五</h4>
+		<h5>标题六</h5>
+		<h6>语义化</h6>
+		
+		<p>标签一</p>    
+		
+		<div>标题一</div>
+		
+		<!--html 语义化-->
+		<!--标签使用H标签   段落使用P标签-->
+		<!--表单提交-->
+		<!--br/是单标签   a /a是双标签-->
+		表单提交 <br />
+		<form action="" >
+			
+			
+			
+		<!--value 和placehoder-->
+		<!--name 是后台接受的字段 value 值-->
+		<!--提交的类型是name的类型  value 的值-->
+		姓名: 
+		<input type="text" name="" id="" value="请输入姓名" />  
+		<br />
+		年龄: 
+		<input type="number" placeholder="请输入年龄" />岁    
+		<br />
+		性别: 
+		<input type="radio" name="sex" value="1" />男 <input type="radio" name="sex" value="2" />女 <input type="radio" name="sex" value="3"/>不选
+		<br />
+		爱好: 
+		<input type="checkbox" name="hobby" />读书<input type="checkbox" name="hobby"/>游泳<input type="checkbox" name="hobby"/>运动<input type="checkbox" name="hobby" />冥想
+		<br />
+		手机号: <input type="tel" />
+		<br />
+		
+		城市: select< name="" id="">
+			
+			<option value="">北京</option>
+			<option value="">青岛</option>
+			<option value="">上海</option>
+			<option value="">广州</option>
+			<option value="">济南</option>
+			<option value="">成都</option>
+		</select>
+		<br />
+		密码:
+		<input type="password" name="" id="" value="" />
+		<br />
+		<input type="button" name="" id="" value="按钮" />
+		<input type="submit" name="" id="" value="信息提交" />
+		<br />
+		邮箱:
+		<input type="email" name="" id="" value="" />
+		<br />
+		文件: 
+		<input type="file" name="" id="" value="" />
+		<br />
+		<!--hidden 隐藏的方式传输后端 需要的数据-->
+		<input type="hidden" name="fromdevice" id="" value="" />
+		<input type="hidden" name="source"  value=""/>
+		<!--reset重置页面所有的内容 需要加form表单-->
+		<input type="reset"  name="重置"/>
+		
+		</form>
+		
+		<button>普通按钮</button>
+	</body>
+</html>

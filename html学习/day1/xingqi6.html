@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.gdgdocs.org/css?family=Lobster" rel="stylesheet" type="text/css">
+		<meta charset="UTF-8">
+		<meta name="author" content="神" />
+		<meta name="keywords" content="关键词、收索引擎、HTML" />
+		<meta name="description" content="文章的段描述、收缩引擎的简述"/>
+		<title>网站标签</title>
+		<link rel="bookmark" href="URL" type="imag/x-icon"/>
+		<link rel="shortcut icon" href="URL" type="imag/x-icon" />
+	</head>
+	<body>
+		<h4>三种列表：1.无序列表 2.有序列表3.自定义列表</h4>
+		<h5>1.无序列表：是没有顺序的列表项目，可以使用符号间隔</h5>
+		<ul>
+			<li>无序列表1</li>
+			<li>无需列表2</li>
+		</ul>
+		<h5>2.有序列表：按照字母或数字等顺序排列的列表项目</h5>
+		<ol>
+			<li>有序列表1</li>
+			<li>有序列表2</li>
+		</ol>
+		<h5>3.自定义列表：不仅是列表的项目，而是项目及其注释的结合</h5>
+		<ul>
+		<dt>dt项目1</dt>
+		<dd>目录1</dd>
+		<dd>目录2</dd>
+		
+		<dt>dt项目2</dt>
+		<dd>目录1</dd>
+		<dd>目录2</dd>
+		</ul>
+		<!--修改所有H3标题文本颜色-->
+		<style>
+			h3{color:blue}
+			p{font-family: sans-serif;}
+			P{font-size: 16px;}
+			h4{font-family: lobster; }
+		</style>
+		
+		<h1><a href="xingqi6.html">标题1使用a herf=地址 加链接</a></h1>
+		<h2 style="color: red;">标题2 style="color:red;设置颜色"</h2>
+		<h3>标题3</h3>
+		<h4>标题4</h4>
+		
+		<h5>标题5</h5>
+		<p>这是一个p段落，<br />我们不想使用两个两个p段落那就可以使用br换行</p>
+		<h6>下面是水平线</h6>
+		<hr/>
+		<p>这是一个p段落，<br />我们不想使用两个两个p段落那就可以使用br换行</p>
+		<h4>上面基本熟悉了，学习一下input元素</h4>
+		<p>input是在form元素中使用</p>
+		<form action=" #" method="post">
+			<label for="text" >文本:</label> 
+			<input type="text" id="text" value="请输入内容" placeholder="cat photo URL"/><br />
+			<label for="password">密码：</label><input type="password" id="password" value="请输入内容" /><br />
+			
+			年龄：<input type="number"  value="18" max="80" min="5"><br />
+			邮箱：<input type="email"  value="@qq.com"/><br />
+			button按钮：<input type="button" value="按钮"/><br />
+			button不会提交表单button 只是单纯的按钮功能，提交的是innerTEXT <br />
+			submit按钮:<input type="submit" value="提交按钮" />submit 会提交表单 <br />
+			图片按钮：   <input type="image" src="favicon.ico" />
+			点击激活图片按钮 input type="image" 会发送 X 和 Y 坐标到服务端<br />
+			重置按钮：   <input type="reset" value="重置"/><br />
+			男： <input type="checkbox" checked="checked"/>女：<input type="checkbox" /> &nbsp; &nbsp;这是复选框<br />
+			file文件： <input type="file" value=""  />选择文件路径
+			
+			隐藏字段：   <input type="hidden" /><br />
+			请输入电话：<input type="tel" value="电话号码" /><br />
+			请输入地址: <input type="url" value="http://www." /><br />
+			week日期：  <input type="week" name="" id="" value="" /><br />
+			month日期：<input type="month" /><br />
+			<label for="date">出生日期：</label> <input type="date" id="date" value="2017-01-01"/>
+			time时间：<input type="time" value="12:00"/><br />
+			datetime：<input type="datetime" /><br />
+			datetime-local:<input type="datetime-local" />
+			radio单选按钮:<input type="radio" name="单选" value="1"/>
+			checked默认:<input type="radio" name="单选"value="2" checked="checked"/><br />
+			color颜色：<input type="color" /><br />
+			文本域：textarea rows="行数" cols="列数" /textarea  <br />
+			<textarea name="" rows="10" cols="50">这是一个文本框textarea</textarea>
+			
+			城市：<select>
+				<!--单选或多选菜单-->
+				<option value="" >option选项</option>
+				<option value="" selected="selected">selected默认显示</option>
+				<option value="">select选择菜单</option>
+				</select>
+		
+			
+			
+		</form>
+		
+		
+		<code>code一般用于显示代码，只能显示一行</code>
+		
+		
+		
+		
+		
+	</body>
+</html>

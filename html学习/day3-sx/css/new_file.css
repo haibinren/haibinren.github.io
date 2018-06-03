@@ -1,0 +1,111 @@
+/*body{
+	background: red;
+}*/
+
+/*样式初始化*/
+html,body,ul,li,p,h1,h2,h3,h4,h5,h6,{
+	margin: 0;
+	padding: 0;
+	
+}
+
+body{
+	font: 12px/1.5 "微软雅黑 " ;
+}
+.tc{
+	font-family: "微软雅黑";
+	color: #666666;
+}
+
+.fr{
+	float: right;
+}
+.fl{
+	float:left;
+	
+}
+.pr{
+	position: relative;
+}
+.pa{
+	position: absolute;
+}
+.bg{
+	background: cadetblue;
+}
+.f15{
+	font-size: 15px;
+}
+.ml10{
+	margin-left: 10px;
+}
+.mr{
+	margin-left: 5px;
+}
+.vm{
+	/*垂直对齐方式                  值
+	/*只能用于行内*/
+	vertical-align: middle;
+}
+
+/*页面*/
+.layout{
+	width: 1000px;
+	margin-left:auto ;
+	margin-right: auto;
+}
+
+.top{
+	height: 38px;
+	background-color: #ededed;           
+}
+
+.top-box{
+	height: 38px;
+	/*文字垂直居中*/
+	line-height:38px;
+}
+.m-lr{
+	margin-left: auto;
+	margin-right: auto;
+}
+/*span*/
+
+.info-icon{
+	/**/
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	background: url(../img/webchat.png) center center;
+	vertical-align: middle;
+}
+/*nav*/
+
+.img-box{
+	height: 73px;
+	
+}
+.logo{
+	width: 208px;
+	height: 54px;
+	padding-top: 12px ;
+	padding-bottom: 7px;
+}
+.logo-nav{
+	float: right;
+	width: 792px;
+	height: 73px;
+	text-align: center;
+	line-height: 73px;
+}
+.nav-a{
+	font-size:15px ;
+	margin-right: 25px;
+	color: #6d6d6d;
+	text-decoration: none;
+}
+.logo-nav .active{
+	border-bottom: 1px solid #40bfe2;
+	color: #40bfe2;
+	padding-bottom: 5px;
+}

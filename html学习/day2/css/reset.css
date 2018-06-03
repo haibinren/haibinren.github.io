@@ -1,0 +1,44 @@
+
+/*标签选择器*/
+/*给哪个标签加*/
+h2{
+	height: 20px;
+	color: red;
+	width: 20px;
+}
+p{
+	width: 50px;
+	height: 50px;
+	background: blue;
+}
+
+/*类选择器*/
+/*谁用谁加class*/
+.nav-list-box{
+	width: 100px;
+	background: yellow;
+}
+
+/*ID 选择器*/
+/*只能给一个用  多用于效果*/
+#nav-dl-box{
+	width: 100px;
+	height: 40px;
+	background: green;
+}
+
+.logo-box{
+	padding: 20px;
+	background: red;
+}
+.logo-box img{
+	margin: 20;
+}
+ol{
+	width: 180px;
+	height: 180px;
+	margin: 100px;
+	padding: 50px;
+	border: 10px solid red;
+	background: red;
+}

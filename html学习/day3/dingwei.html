@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<style type="text/css">
+		/*固定定位*/
+		.top{
+			/*固定定位*/
+			/*页面滑动不影响其位置*/
+			/*根据屏幕定位 脱离文档流*/
+			position: fixed;
+			right: 0px;
+			bottom: 200px;
+			
+			
+			
+		}
+		.block{
+			background: pink;
+			width:100px ;
+			top: 500px;
+			height: 100px;
+		}
+		.box-list{
+			/*绝对定位*/
+			position: absolute;
+			right: 2px;
+			top:5px ;
+		}
+		.box{
+			/*相对定位*/
+			position: relative;
+			margin-left: 500px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="top block">
+		固定定位
+	</div>
+	
+	
+	<div class="box block" >
+		<p class="box-list">绝对定位</p>
+		
+	</div>
+	<div class="box">
+		相对定位
+	</div>
+	
+	<div style="height: 2000px;">
+		
+	</div>
+</body>
+</html>

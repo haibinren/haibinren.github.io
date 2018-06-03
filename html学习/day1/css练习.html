@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>叮当猫</title>
+	<style type="text/css">
+		div{
+			width: 600px;
+			height: 1000px;
+			margin: 0 auto;
+			
+		}
+	</style>
+</head>
+<body>
+	
+	<div>
+		<!--画布的大小-->
+		<canvas id="ear" width="" height=""></canvas>
+		<canvas id="face" width="600" height="1000">
+			您的浏览器不支持canvas,请使用chrome浏览器。
+		</canvas>
+	</div>
+	
+	
+	<script type="text/javascript">
+		//1.获取到画布对象
+		var earOjb = document.getElementById('ear')
+		var faceOjb = document.getElementById('face');
+		//2.创建一个画布  3d
+		var face = faceOjb.getContext('2d');
+		//画外圆
+		//3.开始画布路径 落笔点
+		face.beginPath();
+		//4.花园
+		//参数1 是半径  
+		face.arc(252,252,250,0,2*Math.PI,false);
+		//5.设置颜色 
+		face.fillStyle = 'brown';
+		//6.填充颜色
+		face.fill();
+		//7.结束画布路径 落笔点
+		face.stroke();
+		
+		
+		
+		//花内园
+		//3.开始画布路径 落笔点
+		face.beginPath();
+		//4.花园
+		//参数1 是半径  
+		face.arc(252,282,150,0,2*Math.PI,false);
+		//5.设置颜色 
+		face.fillStyle = 'coral';
+		//6.填充颜色
+		face.fill();
+		//7.结束画布路径 落笔点
+		face.stroke();
+		
+		
+		//眼眶
+		//8，路径
+		face.beginPath();
+		face.arc(202,150,60,0,2*Math.PI,false)
+		face.arc(302,150,60,0,2*Math.PI,false)
+		face.stroke();
+		face.fillStyle = '#fff';
+		face.fill();
+		
+		
+		//眼球
+		face.beginPath();
+		face.arc(217,150,20,0,2*Math.PI,false)
+		face.arc(287,150,20,0,2*Math.PI,false)
+		
+		face.fillStyle = 'darkmagenta';
+		face.fill();
+		
+		
+		//8，鼻子
+		face.beginPath();
+		face.arc(252,222,20,0,2*Math.PI,false)
+		face.fillStyle = 'darkgreen';
+		face.fill();
+		face.stroke();
+		
+		//竖线
+		face.beginPath();
+		face.moveTo(250,252);
+		face.lineTo(250,360);
+		face.lineWidth = '4';
+		face.fillStyle = '#008000';
+		face.stroke();
+		
+		//嘴
+		face.beginPath();
+		face.arc(252,252,150,0.25*Math.PI,0.75*Math.PI, false)
+		
+		face.stroke();
+		
+		//胡须
+		face.beginPath();
+		face.moveTo(80,200);
+		face.lineTo(180,220);
+		face.moveTo(80,240);
+		face.lineTo(180,250);
+		face.moveTo(80,280);
+		face.lineTo(180,280);
+		face.lineWidth ='1';
+		face.stroke();
+		
+		face.beginPath();
+		face.moveTo(320,220);
+		face.lineTo(420,200);
+		face.moveTo(320,250);
+		face.lineTo(420,240);
+		face.moveTo(320,280);
+		face.lineTo(420,280);
+		face.lineWidth ='1';
+		face.stroke();
+		
+		
+	</script>
+	
+	
+	
+	
+</body>
+</html>
