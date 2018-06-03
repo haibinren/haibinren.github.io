@@ -33,6 +33,80 @@
 			<li style="width:130px;height:50 ;bolder-width:0px;float:left;text-align:left;line-height:53px;margin-right:10px;" ><a href="index.html">返回首页</a>
 			</li>
 		</ol>
+		<div style="width:1040px;height:1000px;margin:1px auto; padding:0; border:0px; ">
+		<div style=" width:510px;height:auto;margin:0px auto; padding:0; float:left ;border:1px solid #1874cd;">
+			<div style="width:509;height:25px; text-align:center;"> 操作流程
+			</div>
+		<!--内容---->
+			<div style="width:509;height:auto;border:1px solid #1874cd;"><span> RTP机器操作的流程是:<span></br></br>
+			<pre style="padding:0px; margin:0px;font-size:16px;color:#575757">   (1)RTP的机器可以跑PRRT 的wafer,RTP只能放1粒WAFER
+    
+   (2)检查所有准备好的Wafer  LOT号是否一致是否有破损和数量
+	  不足
+	
+   (3)左边拿出是完成品 → 空盒移动左面 → 右边放入(放入凹槽)
+	
+   (4)Scan LOT 输入chenk sum   LOGID  机器号
+	  
+   (5)在机器屏幕上 输入 LOT号 ， 核对RECIPE 确认
+   
+   (6)取出  核对LOT 收起</pre></br>
+<span>RTP机器的TMP是：</span><pre style="padding:0px; margin:0px atuo;font-size:16px;color:#575757">
+(1)打开WSO 程序 输入部门账号  ，在登陆自己的账号
+(2)使用命令 VSEN 查看当前机器需要做的QSRTP-TPM 按1返回。
+    QSSFP-CHECK 维修师1点前要做，否则机器会停
+(3)输入IMPL 找到对应的QSRTP-TMP  标记一下   按回车键
+   输入 	0.OK OR 1.NO  检查后  输入0
+   输入     温度  (60-100°)
+   回车键查看是否异常 有一排绿色的字提示。有提示不通过 
+   VSEN产看时间是否已更改</pre>
+<span>RTP机器跑TT型号的WAFER：</span><pre style="padding:0px; margin:0px atuo;font-size:16px;color:#575757">
+(1)用一个黑盒子 
+(2)放入两片DUMMY (放入空盒子的最下面)
+   要是有计划  KEY BGN -SETUP
+(3)再放入一片USERD RTS   在DUMMY上面
+(4)放入机器跑 Pecipe 选择 qerts程序
+(5)跑完 看看RTS 有没有烧焦的迹象或其他问题
+</pre>
+<span>RTP跑测试和KEY DOWN：</span><pre style="padding:0px; margin:0px atuo;font-size:16px;color:#575757">
+(1)KEY DOWN 提交  命令(IMPL)
+(2)输入 IMPL  按小数字4 翻页  找到BGN-SETUP   提交开始
+(3)完成后                     找到END-SETUP   结束
+</pre> 
+<span>RTP跑测试手动自动切换</span><pre style="padding:0px; margin:0px atuo;font-size:16px;color:#575757">
+(1)GEM
+(2)LOCAL control (本机操作 手动) REMOTE control(远程自动) 按EXIT
+(3)按RUN   选择程序(例如qertpspv.voo) 
+(4)按DOWN LOAD      然后选择    按START
+(5)提示输入 (例如 SPV) 这时已经运行
+(6)完成后有提示  点击 OK    在点击NO 按NEXT 按LOG 按GEM Manage
+</pre> 
+			
+			</div>
+		</div>
+<!--第二个盒子  注意事项--->
+		<div style="width:510px;height:auto;margin:0px auto; padding:0; border:1px solid #1874cd; float:right">
+			<div style="width:509;height:25px; text-align:center;"> 注意事项
+			</div>
+		<!--内容---->
+			<div style="width:509;height:auto;border:1px solid #1874cd;"><span>OV机器的注意事项</span></br></br>
+				<pre style="padding:0px; margin:0px auto;font-size:16px;color:#575757">
+(1)注意放入是       一定要放到准确的位置。
+(2)注意TT菜单的     要做DUMMY 分开跑
+(3)RTP一个小时未跑  要做DUMMY 
+   看计划 按照剩余时间最少的先跑
+(4)机器清洁度  三类
+clean liner     RTO   PCC                  SPV-QERTPSPV.VOO
+change liner    RTO   PCC  RTS             PCC-QERTPPCC.VOO
+PM              RTO   PCC  RTS   SPV       RTS-QERTS.VOO
+(5)可以跑16、17次的 RECIPE
+3V1A   2W3H  2W1A   6K1A   BK1A   EB50  BK1G  3V1A
+(6)计划观察
+蓝色=数值不在范围中 黄色 = 空闲机器  橙色 =维修中 红色=机器故障
+				</pre>
+			</div>
+		</div>
+		</div>
 	</body>
 	
 </html>
