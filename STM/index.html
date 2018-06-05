@@ -1,6 +1,18 @@
 <html>
 	<head>
 		<title>STM学习资料</title>
+		<script type="text/javascript">
+		function showTime(){
+			nowtime=new Date();
+			year=nowtime.getFullYear();
+			month=nowtime.getMonth()+1;
+			date=nowtime.getDate();
+			document.getElementById("mytime").innerText=year+"年"+month+"月"+date+"日"+nowtime.toLocaleTimeString();
+		}
+
+		setInterval("showTime()",1000);
+
+		</script>
 		<style type="text/css">
 		/*	a:link是超级链接的初始状态
 			a:hover是把鼠标放上去时悬停的状况 
@@ -12,8 +24,11 @@
 		a:active {color: # ;text-decoration: none;} /* 选定的链接 */
 		</style>
 	</head>
-	<body style="width:auto;height:auto; background-image:url(bg-img.jpg)">
-		<ul style="width:1000px;height:60px;margin:1 auto;">
+	<body style="width:auto;height:auto;">
+	
+	<span style="color:red;">公告：</span>
+	<span >以上内容未经同意禁止转载。</span><span id="mytime"></span> </br>
+		<ul style="width:1000px;height:120px;margin:1 auto; background:url(111.jpg) no-repeat top center;">
 			<li style="text-align:center;padding-top:1px;"><h2>新加坡STM学习资料 IPML</h2>
 			</li>
 		</ul>
@@ -38,7 +53,7 @@
 			<li style=""><h3>常用<u>WSO命令</u>和<u>常用英文单词</u>
 			</li>
 		</ul>
-		<div style="width:1042px;margin:0 auto; padding:0;bolder:0;height:auto;">
+		<div style="width:1042px;margin:0 auto; padding:0;bolder:0;height:800px;">
 			<table style="height:25px;margin:0 auto;width:502px;text-align:left;float:left;font-size:15px;">
 				<tr style="text-align:left; background:#ffdead ;margin:0; width:500px"  >
 					<th>名称:</th>
