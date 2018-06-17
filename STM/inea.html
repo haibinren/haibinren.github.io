@@ -33,7 +33,7 @@
 			</li>
 		</ul>
 		<ol style="width:1000px;height:60px;margin:0px auto;">
-			<li style="width:130px;height:50;bolder-width:0px;float:left;text-align:left;line-height:53px;margin-right:10px; ><a href="inov.html">INOV机型</a>
+			<li style="width:130px;height:50 ;bolder-width:0px;float:left;text-align:left;line-height:53px;margin-right:10px;" ><a href="inov.html">INOV机型</a>
 			</li>
 			<li style="width:130px;height:50 ;bolder-width:0px;float:left;text-align:left;line-height:53px;margin-right:10px;" ><a href="inrt.html">INRT机型</a>
 			</li>
@@ -41,7 +41,7 @@
 			</li>
 			<li style="width:130px;height:50 ;bolder-width:0px;float:left;text-align:left;line-height:53px;margin-right:10px;" ><a href="invs.html">INVS机型</a>
 			</li>
-			<li style="width:130px;height:50 ;bolder-width:0px;float:left;text-align:left;line-height:53px;margin-right:10px;" ><a href="inea.html">INEA机型</a>
+			<li style="width:130px;height:50 ;bolder-width:0px;float:left;text-align:left;line-height:53px;margin-right:10px;" >INEA机型
 			</li>
 			<li style="width:130px;height:50 ;bolder-width:0px;float:left;text-align:left;line-height:53px;margin-right:10px;" ><a href="">等待更新</a>
 			</li>
@@ -51,37 +51,75 @@
 <!---->		
 		<div style="width:1040px;height:800px;margin:1px auto; padding:0; border:0px; ">
 		<div style=" width:510px;height:auto;margin:0px auto; padding:0; float:left ;border:1px solid #1874cd;">
-			<div style="width:509;height:25px; text-align:center;"> 操作流程
+			<div style="width:509;height:25px; text-align:center;"> EA机型操作流程（GSD）
 			</div>
 		<!--内容---->
-			<div style="width:509;height:auto;border:1px solid #1874cd;"><span> OV机器操作的流程是:<span></br></br>
-			<pre style="padding:0px; margin:0px;font-size:16px;color:#575757">   (1)ov的机器只能跑 <u>30m 、 50m 最多只能放8粒</u> 的wafer, 
-    
-   (2)检查所有准备好的Wafer  LOT号是否一致是否有破损和数量
-		不足
-	
-   (3)Scan LOT 全部扫描
-	
-   (4)将扫描过的wafer转换到白色的容器里面 并输入chenk sum   
-      扫描LogID 和机器号确认后 顺序放入机器中（f2开门）.
-	  
-   (5)按住 设置+↑ 选择 30m 50m, pcc...温度125+—5(f1开始）
-   
-   (6)取出  由下至上的顺序取出。放在冷却区域 冷却10分钟。
-   
-   (7)将白色容器换回黑色容器  观察LOT 是否一致 然后
-      SCAN LOGOUT  输入wafer数量是否一致。</pre></br>
-<span>OV机器的TMP是：</span><pre style="padding:0px; margin:0px atuo;font-size:16px;color:#575757">
-(1)打开WSO 程序 输入部门账号  ，在登陆自己的账号
-(2)使用命令 VSEN 查看当前机器需要做的QSOV-TPM 按1返回。
-(3)输入IMPL 找到对应的QSxxTMP  标记一下   按回车键
-   输入 	0.OK OR 1.NO  检查后  输入0
-   输入 	温度(>150°)
-   输入		气压（5-10）
-   回车键查看是否异常 有一排绿色的字提示。有提示不通过 
-   VSEN产看时间是否已更改
-   
-   
+			<div style="width:509;height:auto;border:1px solid #1874cd;"><span> PCC操作流程(auto clea)：<span></br></br>
+			<pre style="padding:0px; margin:0px;font-size:16px;color:#575757">
+第一步：准备工作
+1.VSEN命令产看今天有没有 -MSIMPSURF(PCC) ,红色盒子wafer.
+2.清空机器中的产品，
+3.BGN-QUATASK 
+第二部: 参数值设置
+1.打开Beam 菜单
+    点击Auto Tune 
+    点击Hold+About(多按几次) 变成Idle.
+2.GAS(气体)——>off(关)
+    点击 Select Specles 
+    点选GAS...1(第一个 ARGON) 变成白点就选中了 
+  GAS——> ON(开)
+    sccm ——> set: 1  每次设置完 要按enter键
+3.(第二排) 
+  Magnet——> set: 5
+  Arc  ——> Actual  set: 0.5
+       ——>		   set: 60
+4.(第三排) 
+  Extraction ——>set:50 
+  Gap Axls   Rosn= >=1500
+5.(第四排) AMU
+  set Amu ——>set:40 
+  Acceleration  Actual ——> set :50  
+  设置完成
+6.点击下面 AMU  看提示 : 忘记什么提示了
+  Operator  首页第一个  回到首页
+7.Detall ——> Show Auto clean.  
+  按一次 Auto clean （会循环10次 ） 
+  等待十次循环完成。。。。。。
+  
+第三部：跑DAMMY -单独跑
+1.确认接下来的产品 使用的气体。
+2.Add cassetle 菜单选择 
+  1.pcc-CONDITIONING   ——>BF3(B+)
+                       ——>PH3(p+)
+  2.菜单上面 输入ID  任意内容
+  3.关门
+  
+第四部：跑PCC - 单独跑
+1.确认接下来的产品 使用的气体。
+2.Add cassetle 菜单选择 
+  1.pcc   ——>(B+) BORONPCC
+          ——>(p+) PHPCC
+          ——>(A+) ....
+		  
+  2.菜单上面 输入ID  任意内容
+  3.关门 (不要让PCC精品接触多余的空气)
+  4.取出送走。
+</pre></br>
+<span>EA机型160次以上清洁、测量：</span><pre style="padding:0px; margin:0px atuo;font-size:16px;color:#575757">
+1. 使用test wafer 
+2. 菜单选择 HBM
+-------EA05清洁-----------------
+1. 使用test wafer 
+2. vsen  QSIMPRS-CHBF	 就选 HIBF2
+         QSIMPRS-CMBF	 
+         QSIMPRS-UHBF	 
+         QSIMPRS-CMBF	
+3测量
+手动 wso  
+1. QUAI
+2. 机器名称(INEA05)
+3. 选择 CHBF = 输入值   =  MEAN 的值
+        UHBF = 输入值   =  （） %的值
 </pre>
 		
    
@@ -93,10 +131,13 @@
 			<div style="width:509;height:25px; text-align:center;"> 注意事项
 			</div>
 		<!--内容---->
-			<div style="width:509;height:auto;border:1px solid #1874cd;"><span>OV机器的注意事项</span></br></br>
+			<div style="width:509;height:auto;border:1px solid #1874cd;"><span>EA机器特点和操作重点</span></br></br>
 				<pre style="padding:0px; margin:0px auto;font-size:16px;color:#575757">
-(1)关门后记得 按F1 .
-(2)Recipe 30m 或 50m 一定要分清楚。不要30m的跑了50m.
+(1)  厚和薄的wafer不能一起跑,机器太晃动了 
+     除A M 之外都是都是后的
+(2)  跑薄的需要和DAMMY一起跑
+(3)  尽量 同样的rseipe 的两粒一起跑
+
 				</pre>
 			</div>
 		</div>
