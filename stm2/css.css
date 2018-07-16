@@ -1,0 +1,189 @@
+#topUL
+{
+	list-style-type:none;
+	margin:0px;
+	padding-top:50px;
+	width: 1160px;
+	height: 250px;
+	margin:auto auto;
+	line-height: 50PX;
+	text-align: center;
+	
+	background: url(img/111.jpg);
+	
+}
+#topH2
+{
+
+}
+
+/* 导航内容 */
+ul{
+    list-style: none;
+}
+#nav-box{
+	width: 1200px;
+	height: 36px;
+	margin: 0 auto;
+	background-color: #efefef;
+}
+.nav{
+	width: 1000px;
+	height: 35px;
+	margin: 0 auto;
+	padding-left: 0px;
+	
+}
+.nav>li{
+    float: left;
+}
+ul a{
+    display: block;
+    text-decoration: none;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    background-color: #2f3e45;
+}
+.nav>li:first-child a{
+    border-radius: 10px 0 0 10px;
+}
+.nav>li:last-child a{
+    border-radius: 0 10px 10px 0;
+}
+.drop-down {
+    position: relative;
+}
+.drop-down1 {
+    position: relative;
+}
+.drop-down2 {
+    position: relative;
+}
+.drop-down3 {
+    position: relative;
+}
+.drop-down4 {
+    position: relative;
+}
+.drop-down-content {
+    padding: 0;
+    position: absolute;
+    left: -9990px;
+}
+.drop-down-content1 {
+    padding: 0;
+    position: absolute;
+    left: -9990px;
+}
+.drop-down-content2 {
+    padding: 0;
+    position: absolute;
+    left: -9000px;
+}
+.drop-down-content3 {
+    padding: 0;
+    position: absolute;
+    left: -13000px;
+}
+.drop-down-content4 {
+    padding: 0;
+    position: absolute;
+    left: -15000px;
+}
+h3{
+    font-size: 30px;
+    clear: both;
+}
+.drop-down-content  li:hover a{
+    background-color:red;
+}
+.drop-down-content1 li:hover a{
+    background-color:red;
+}
+.drop-down-content2 li:hover a{
+    background-color:red;
+}
+.drop-down-content3 li:hover a{
+    background-color:red;
+}
+.drop-down-content4 li:hover a{
+    background-color:red;
+}
+.nav .drop-down:hover .drop-down-content{
+    left: 0;
+}
+.nav .drop-down1:hover .drop-down-content1{
+    left: 0;
+}
+.nav .drop-down2:hover .drop-down-content2{
+    left: 0;
+}
+.nav .drop-down3:hover .drop-down-content3{
+    left: 0;
+}
+.nav .drop-down4:hover .drop-down-content4{
+    left: 0;
+}
+/* 导航结束----------------------------------------------------- */
+.box-box{
+	width: 1200px;
+	padding: 0 0;
+	margin: 0 auto;
+	height: 728px;
+	border: 1px  solid red;
+	background-color: #efefef;
+}
+.box-img{
+	float: left;
+	width: 800px;
+	height: 579px;
+
+}
+.box-cent{
+	float: right;
+	width: 398px;
+	height:579px;
+	border-bottom: 1px solid yellow;
+	color: #AE57A4;
+}
+.box-cent h3{
+	display: inline-block;
+	text-align: center;
+	width: 390px;
+}
+.box-bottom{
+	display: inline-block;
+	width: 1200px;
+	height: 148px;
+	margin: 0 auto;
+	padding: 0 0;
+	background-image: url(img/anniu.jpg);
+}
+.box-bottom-1{
+	width: 1198px
+	height:50px;
+	text-align: center;
+		margin-top: 20px;
+
+	line-height: 30px;
+	 
+}
+.box-bottom-1 span{
+	color:#FF79BC	;
+	font-size: 22px;
+}
+.box-bottom-2{
+	margin-top: 20px;
+	width: 1200px;
+	height: 50px;
+	line-height: 30px;
+	text-align: center;
+}
+.box-bottom-1 span{
+	
+	font-size: 22px;
+	
+}
