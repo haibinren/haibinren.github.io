@@ -9,7 +9,9 @@
 	<div style = "text-align:center " >
 		<h3>下面是浊辅音练习</h3>
 		<img src="ks.png" width="400px" height="400px" alt="" id="img" ;>
+		<p id ="xuhao"></p>
 		<p>功能：将顺序打乱 点击按钮 下一步~上一步 展示错乱排列的图片组中的每一张假名</p>
+		<p>需要重新排序，刷新网页即可</p>
 	</div>
 		<button type="button" id="prev">上一张</button>
 		<button type="button" id="next">下一张</button>
@@ -112,6 +114,7 @@ var lasturll = urll.slice(0, urll.length - 10);
 		nextBtn.onclick = function() {
 			index++;
 			console.log(index);
+			xuhao.innerText = index;
 			if (index > imgArr.length - 1) {
 
 				index = 0;
@@ -123,7 +126,7 @@ var lasturll = urll.slice(0, urll.length - 10);
 		prevBtn.onclick = function() {
 			index--;
 			console.log(imgArr[index]);
-			
+			xuhao.innerText = index;
 			if (index < 0) {
 				index = imgArr.length - 1;
 			}
